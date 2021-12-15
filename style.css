@@ -1,0 +1,435 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e323f;
+  text-align: center;
+  padding: 1em 0em;
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+
+.logo a {
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.burger {
+  position: absolute;
+  right: 1em;
+  top: 1.4em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #3b4050;
+  padding: 0.8em;
+  z-index: 1;
+}
+
+div.burger > div {
+  height: 5px;
+  width: 30px;
+  background-color: #fff;
+}
+
+div.burger > div + div {
+  margin-top: 5px;
+}
+
+div.toggle-on-mobile {
+  display: none;
+}
+
+div.toggle-on-mobile .left {
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+div.togglemenu {
+  display: block;
+}
+
+div.toggle-on-mobile li {
+  margin-top: 0.7em;
+}
+
+/* end of styling header */
+
+/* start of styling first section */
+
+div.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section.first {
+  background-color: #3b4050;
+}
+
+section h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  padding: 0.7em 0em 0.3em 0em;
+  line-height: 1.2;
+}
+
+section h1 span {
+  color: #a59678;
+}
+
+div.first-right p {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding: 1em 0em;
+  line-height: 1.5;
+}
+
+section.first button {
+  padding: 0.4em 1.5em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  background-color: #a59678;
+  border-radius: 100px;
+  color: white;
+  font-size: 24px;
+  display: block;
+  margin: 1em auto;
+  border: none;
+  cursor: pointer;
+}
+
+section.first .first-right {
+  padding-bottom: 3em;
+}
+
+li.signup a {
+  padding: 0.3em 0.9em;
+  background-color: #a59678;
+  border-radius: 100px;
+}
+
+/* end of styling first section */
+
+/* start of styling second section */
+
+section.second {
+  background-color: rgb(240, 240, 240);
+}
+
+section.second h2 {
+  font-family: "Oswald", sans-serif;
+  color: #a59678;
+  font-size: 30px;
+  margin-bottom: 0.4em;
+}
+
+section.second div {
+  text-align: center;
+  padding: 1.2em 0em;
+}
+
+section.second div p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* end of styling second section */
+
+/* start of third section */
+
+section.third {
+  padding: 2em 0em;
+}
+
+section.third h2 {
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+  color: #a59678;
+  margin-bottom: 0.5em;
+}
+
+section.third p {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section.third img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 2em 0em;
+}
+
+div.boxedtext {
+  background-color: #3b4050;
+  text-align: center;
+  padding: 1em 2em;
+  margin-top: 2em;
+  color: #fff;
+}
+
+div.boxedtextsection {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+div.boxedtext h3 {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+div.boxedtext p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.7em 0em 1.5em 0em;
+}
+
+/* End of designing third section */
+
+/* Design footer */
+
+footer {
+  background-color: #3b4050;
+  text-align: center;
+  padding: 2em 0em 3em 0em;
+}
+
+.footer-flex div + div {
+  margin-top: 1em;
+}
+
+footer h2 {
+  margin-bottom: 0.5em;
+  color: white;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+footer h4 {
+  color: #a59678;
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+footer p {
+  color: #bcc2d6;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #bcc2d6;
+}
+
+.footer--left {
+  padding: 1em;
+}
+
+footer li + li {
+  margin-top: 0.5em;
+}
+
+@media screen and (min-width: 700px) {
+  .logo a {
+    font-size: 50px;
+  }
+  header a {
+    font-size: 22px;
+  }
+
+  section h1 {
+    font-size: 5em;
+  }
+
+  section.second h2 {
+    font-size: 2.3em;
+  }
+
+  section.second div p {
+    font-size: 1.3em;
+    padding: 0em 1em;
+  }
+
+  section.third h2 {
+    font-size: 2.3em;
+  }
+
+  section.third p {
+    font-size: 1.5em;
+  }
+
+  div.boxedtextsection {
+    display: flex;
+    font-size: 12px;
+    padding: 0.5em 0em;
+    width: 100%;
+  }
+
+  div.boxedtextsection div + div {
+    margin-left: 0.8em;
+  }
+
+  footer p {
+    padding: 0 2em;
+  }
+
+  .flex-on-medium {
+    display: flex;
+  }
+
+  .footer-flex div {
+    margin-top: 1em;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.toggle-on-mobile .left {
+    padding-bottom: 0;
+  }
+  div.toggle-on-mobile {
+    display: flex;
+    margin-left: auto;
+  }
+
+  div.burger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    align-items: center;
+  }
+
+  div.nav-middle-left {
+    margin-right: 2em;
+  }
+
+  div.toggle-on-mobile li {
+    margin: 0 0 0 1em;
+  }
+
+  .toggle-on-mobile ul {
+    display: flex;
+  }
+
+  div.toggle-on-mobile .left {
+    margin: 0;
+  }
+
+  div.flex {
+    display: flex;
+    flex: 1;
+  }
+  section h1 {
+    padding: 0.7em 0em 0.9em 0em;
+  }
+  section.first .first-right {
+    align-self: flex-end;
+    padding-bottom: 4em;
+    margin-left: 1.3em;
+  }
+  section.first button {
+    margin: 0;
+  }
+
+  section.second .container {
+    display: flex;
+  }
+  section.second div p {
+    padding: 0 0.3em;
+  }
+  section.second div + div {
+    margin-left: 2em;
+  }
+
+  section.third .container {
+    display: flex;
+  }
+  section.third .container .left {
+    flex: 2;
+    margin-right: 1.35em;
+  }
+
+  div.boxedtextsection {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  div.boxedtextsection {
+    display: block;
+  }
+  div.boxedtextsection div + div {
+    margin-left: 0;
+  }
+
+  div.boxedtext {
+    margin: 1.3em 0 2em 0;
+  }
+
+  .footer-flex {
+    display: flex;
+    text-align: start;
+  }
+
+  footer h2 {
+    text-align: center;
+  }
+  footer p {
+    padding: 0;
+  }
+
+  .footer-flex div + div {
+    margin-top: 0;
+    margin-left: 1.5em;
+  }
+  .flex-on-medium {
+    display: flex;
+  }
+  .footer-flex div {
+    margin-top: 0;
+  }
+  footer h2 {
+    margin-bottom: 1em;
+  }
+
+  .footer--1 {
+    flex: 2.5;
+  }
+  .footer--2 {
+    flex: 1;
+  }
+  .footer--3 {
+    flex: 1;
+  }
+  .footer--4 {
+    flex: 1;
+  }
+}
